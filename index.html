@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cour HTML et CSS - Groupe 1</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Bienvenue sur notre projet IISAN</h1>
+
+        <nav>
+            <a href="#html" title="Vers HTML">HTML</a>
+            <a href="#css" title="Vers CSS">CSS</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="html">
+            <p id="p2">
+                Nous découvrons HTML et CSS à IISAN Abidjan pour la structuration
+                et le design d'une page web. Ce projet est codé en HTML5 et en CSS3.
+            </p>
+
+            <h3>I. Le HTML</h3>
+
+            <img src="Image/image.jpg" alt="Exemple de code HTML" title="Exemple de code HTML" width="300" height="200">
+
+            <p>
+                Pour maîtriser HTML, il faut connaître :
+            </p>
+
+            <ol>
+                <li>La structure d'un code HTML</li>
+                <li>Les balises</li>
+                <li>Les attributs des différentes balises</li>
+                <li>L'utilisation des balises dans la structuration de la page</li>
+            </ol>
+        </section>
+
+        <section>
+            <h4>1. La structure d'un code HTML</h4>
+
+            <p>
+                Un code HTML est composé de balises et chaque balise a un rôle précis.
+                Une page HTML possède généralement une structure de base.
+            </p>
+
+            <ul>
+                <li><strong>html</strong> : contient toute la page.</li>
+                <li><strong>head</strong> : contient les informations de la page.</li>
+                <li><strong>body</strong> : contient les éléments affichés sur la page.</li>
+            </ul>
+
+            <p>Exemple :</p>
+
+            <pre>
+                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Ma page&lt;/title&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+        &lt;h1&gt;Bonjour&lt;/h1&gt;
+    &lt;/body&gt;
+
+ &lt;/html&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h4>2. Les balises</h4>
+
+            <p>
+                Les balises permettent de donner une structure au contenu d'une page web.
+            </p>
+
+            <ul>
+                <li><strong>h1 à h6</strong> : les titres.</li>
+                <li><strong>p</strong> : les paragraphes.</li>
+                <li><strong>a</strong> : les liens.</li>
+                <li><strong>img</strong> : les images.</li>
+                <li><strong>ul</strong> : une liste non ordonnée.</li>
+                <li><strong>ol</strong> : une liste ordonnée.</li>
+                <li><strong>li</strong> : un élément de liste.</li>
+                <li><strong>header</strong> : l'en-tête.</li>
+                <li><strong>nav</strong> : la zone de navigation.</li>
+                <li><strong>main</strong> : le contenu principal.</li>
+                <li><strong>section</strong> : une partie de la page.</li>
+                <li><strong>footer</strong> : le pied de page.</li>
+            </ul>
+
+            <p>Exemple :</p>
+            <pre>
+                <code>
+&lt;h2&gt;Mon titre&lt;/h2&gt;
+&lt;p&gt;Mon paragraphe&lt;/p&gt;
+&lt;a href="https://example.com"&gt;Mon lien&lt;/a&gt;
+</code>
+</pre>
+        </section>
+
+        <section>
+            <h4>3. Les attributs</h4>
+
+            <p>
+                Les attributs donnent des informations supplémentaires aux balises.
+            </p>
+
+            <ul>
+                <li><strong>id</strong> : permet d'identifier un élément.</li>
+                <li><strong>class</strong> : permet de donner une classe à un élément.</li>
+                <li><strong>href</strong> : indique la destination d'un lien.</li>
+                <li><strong>src</strong> : indique la source d'une image.</li>
+                <li><strong>alt</strong> : donne une description d'une image.</li>
+                <li><strong>title</strong> : affiche une information au survol.</li>
+                <li><strong>width</strong> : définit la largeur.</li>
+                <li><strong>height</strong> : définit la hauteur.</li>
+            </ul>
+
+            <p>Exemple :</p>
+            <pre>
+                <code>
+&lt;p class="texte" id="premier"&gt;Bonjour&lt;/p&gt;
+                </code>
+            </pre>
+
+            <p>
+                Une <strong>class</strong> peut être utilisée sur plusieurs éléments,
+                alors qu'un <strong>id</strong> sert normalement à identifier un élément précis.
+            </p>
+        </section>
+
+        <section id="css">
+            <h3>II. Le CSS</h3>
+            <img src="Image/image 2.jpg" alt="Exemple de code CSS" title="Exemple de code CSS" width="300" height="200">
+            <p>
+                Le CSS permet de modifier l'apparence d'une page HTML.
+                Il permet par exemple de changer les couleurs, les tailles,
+                les marges et les bordures.
+            </p>
+
+            <h4>1. Qu'est-ce que le CSS ?</h4>
+            <p>
+                CSS signifie <strong>Cascading Style Sheets</strong>, ou feuilles de style en cascade.
+                HTML sert principalement à structurer la page et CSS sert à la mettre en forme.
+            </p>
+
+            <h4>2. Les sélecteurs CSS</h4>
+            <p>
+                Un sélecteur permet de choisir l'élément HTML que l'on veut modifier.
+            </p>
+
+            <pre>
+                 <code>
+                     p {
+                        color: blue;
+                    }
+
+                    h1 {
+                        text-align: center;
+                    }
+                    </code>
+                    </pre>
+
+            <h4>3. Le sélecteur class</h4>
+            <p>
+                Une class est appelée avec un point <strong>.</strong> en CSS.
+            </p>
+
+            <pre>
+                <code>
+                    .texte {
+                            color: blue;
+                    }
+                </code>
+            </pre>
+
+            <h4>4. Le sélecteur id</h4>
+            <p>
+                Un id est appelé avec le symbole <strong>#</strong> en CSS.
+            </p>
+
+            <pre>
+                <code>
+                    #p2 {
+                         color: black;
+                    }
+                </code>
+            </pre>
+
+            <h4>5. Les couleurs</h4>
+            <p>
+                La propriété <strong>color</strong> permet de modifier la couleur du texte.
+                La propriété <strong>background-color</strong> permet de modifier la couleur de fond.
+            </p>
+
+            <pre>
+                <code>
+                    p {
+                        color: blue;
+                        background-color: white;
+                }
+                </code>
+            </pre>
+
+            <h4>6. La taille du texte</h4>
+            <p>
+                La propriété <strong>font-size</strong> permet de modifier la taille du texte.
+            </p>
+
+            <pre>
+                <code>
+                    h1 {
+                        font-size: 50px;
+                }
+                </code>
+            </pre>
+
+            <h4>7. La police</h4>
+            <p>
+                La propriété <strong>font-family</strong> permet de choisir la police du texte.
+            </p>
+
+            <pre>
+                <code>
+                    body {
+                         font-family: Arial, Helvetica, sans-serif;
+                    }
+                </code>
+            </pre>
+
+            <h4>8. Les bordures</h4>
+            <p>
+                La propriété <strong>border</strong> permet d'ajouter une bordure autour d'un élément.
+            </p>
+
+            <pre>
+                <code>
+                    main {
+                          border: 3px solid black;
+                        }
+                </code>
+            </pre>
+
+            <h4>9. Les marges et les espaces</h4>
+            <p>
+                <strong>margin</strong> permet de créer un espace autour d'un élément.
+                <strong>padding</strong> permet de créer un espace entre le contenu et la bordure.
+            </p>
+
+            <pre>
+                <code>
+                    section {
+                            margin: 20px;
+                            padding: 20px;
+                    }
+                </code>
+            </pre>
+
+            <h4>10. Quelques propriétés CSS importantes</h4>
+            <ul>
+                <li><strong>color</strong> : couleur du texte.</li>
+                <li><strong>background-color</strong> : couleur de fond.</li>
+                <li><strong>font-size</strong> : taille du texte.</li>
+                <li><strong>font-family</strong> : police du texte.</li>
+                <li><strong>text-align</strong> : alignement du texte.</li>
+                <li><strong>border</strong> : bordure.</li>
+                <li><strong>margin</strong> : marge extérieure.</li>
+                <li><strong>padding</strong> : espace intérieur.</li>
+                <li><strong>width</strong> : largeur.</li>
+                <li><strong>height</strong> : hauteur.</li>
+            </ul>
+
+            <h4>Conclusion</h4>
+            <p>
+                HTML et CSS sont deux langages complémentaires. HTML permet de construire
+                la structure d'une page web et CSS permet de modifier son apparence.
+                Leur utilisation permet de créer des pages web simples et organisées.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="https://openclassrooms.com/fr/" title="Cliquez sur le lien" target="_blank">
+            Clique ici pour rejoindre openclassrooms
+
+
+        </a>
+        <br>
+        &copy; 2026 Callmeyvojr - Tout droit réservé &copy;
+    </footer>
+
+</body>
+
+</html>
