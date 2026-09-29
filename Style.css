@@ -39,7 +39,9 @@ header p {
 
 nav {
     display: flex;
-    gap: 10px;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
@@ -116,7 +118,7 @@ pre {
 }
 
 code {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
 }
 
 .important {
@@ -137,102 +139,4 @@ code {
 .proprietes div {
     background-color: #eef4ff;
     border: 2px solid blue;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.proprietes strong {
-    color: darkblue;
-}
-
-.proprietes p {
-    margin-bottom: 0;
-}
-
-.exercice {
-    background-color: #f5f8ff;
-    border: 2px solid blue;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-}
-
-.exercice h3 {
-    margin-top: 0;
-}
-
-footer {
-    background-color: rgb(39, 32, 32);
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 30px;
-}
-
-footer p {
-    margin: 8px;
-}
-
-.footer-link {
-    color: white;
-    font-weight: bold;
-}
-
-.footer-link:hover {
-    color: lightblue;
-}
-
-@media (max-width: 900px) {
-
-    .entete {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .proprietes {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-
-    header {
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    main {
-        width: 95%;
-        margin: 15px auto;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 25px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-
-    .proprietes {
-        grid-template-columns: 1fr;
-    }
-}
+    padding: 15
