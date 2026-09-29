@@ -125,4 +125,570 @@
                 <li><strong>ul</strong> : liste non ordonnée.</li>
                 <li><strong>ol</strong> : liste ordonnée.</li>
                 <li><strong>li</strong> : élément d'une liste.</li>
-                <li><strong>header</
+                <li><strong>header</strong> : en-tête.</li>
+                <li><strong>nav</strong> : navigation.</li>
+                <li><strong>main</strong> : contenu principal.</li>
+                <li><strong>section</strong> : partie de la page.</li>
+                <li><strong>footer</strong> : pied de page.</li>
+            </ul>
+
+            <pre><code>&lt;h2&gt;Mon titre&lt;/h2&gt;
+
+&lt;p&gt;Mon paragraphe&lt;/p&gt;
+
+&lt;a href="https://example.com"&gt;
+    Mon lien
+&lt;/a&gt;</code></pre>
+
+
+            <h3>3. Les attributs</h3>
+
+            <p>
+                Les attributs donnent des informations supplémentaires
+                aux balises HTML.
+            </p>
+
+            <ul>
+                <li><strong>id</strong> : identifie un élément.</li>
+                <li><strong>class</strong> : donne une classe.</li>
+                <li><strong>href</strong> : destination d'un lien.</li>
+                <li><strong>src</strong> : source d'une image.</li>
+                <li><strong>alt</strong> : description d'une image.</li>
+                <li><strong>title</strong> : information au survol.</li>
+                <li><strong>width</strong> : largeur.</li>
+                <li><strong>height</strong> : hauteur.</li>
+            </ul>
+
+            <pre><code>&lt;p class="texte" id="premier"&gt;
+    Bonjour
+&lt;/p&gt;</code></pre>
+
+        </section>
+
+
+        <section id="html-avance">
+
+            <h2>II. HTML avancé</h2>
+
+            <p>
+                Après les bases, HTML permet également de créer des
+                structures plus complètes et des pages mieux organisées.
+            </p>
+
+
+            <h3>1. Les balises sémantiques</h3>
+
+            <p>
+                Les balises sémantiques permettent de donner un sens
+                aux différentes parties d'une page.
+            </p>
+
+            <pre><code>&lt;header&gt;
+    En-tête
+&lt;/header&gt;
+
+&lt;nav&gt;
+    Navigation
+&lt;/nav&gt;
+
+&lt;main&gt;
+
+    &lt;section&gt;
+        Contenu
+    &lt;/section&gt;
+
+    &lt;article&gt;
+        Article
+    &lt;/article&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;
+    Pied de page
+&lt;/footer&gt;</code></pre>
+
+
+            <h3>2. Les formulaires</h3>
+
+            <p>
+                Les formulaires permettent de récupérer des informations
+                saisies par l'utilisateur.
+            </p>
+
+            <pre><code>&lt;form&gt;
+
+    &lt;label&gt;Nom :&lt;/label&gt;
+
+    &lt;input type="text" required&gt;
+
+    &lt;label&gt;Email :&lt;/label&gt;
+
+    &lt;input type="email" required&gt;
+
+    &lt;button type="submit"&gt;
+        Envoyer
+    &lt;/button&gt;
+
+&lt;/form&gt;</code></pre>
+
+
+            <h3>3. Les tableaux</h3>
+
+            <p>
+                Les tableaux permettent d'organiser des informations
+                sous forme de lignes et de colonnes.
+            </p>
+
+            <pre><code>&lt;table&gt;
+
+    &lt;tr&gt;
+        &lt;th&gt;Nom&lt;/th&gt;
+        &lt;th&gt;Âge&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;Yves&lt;/td&gt;
+        &lt;td&gt;17&lt;/td&gt;
+    &lt;/tr&gt;
+
+&lt;/table&gt;</code></pre>
+
+
+            <h3>4. Audio et vidéo</h3>
+
+            <p>
+                HTML permet également d'intégrer directement
+                des fichiers audio et vidéo.
+            </p>
+
+            <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+
+&lt;video controls width="500"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+
+
+            <h3>5. Attributs utiles</h3>
+
+            <div class="proprietes">
+
+                <div>
+                    <strong>required</strong>
+                    <p>Rend un champ obligatoire.</p>
+                </div>
+
+                <div>
+                    <strong>placeholder</strong>
+                    <p>Affiche un texte indicatif.</p>
+                </div>
+
+                <div>
+                    <strong>autocomplete</strong>
+                    <p>Facilite la saisie.</p>
+                </div>
+
+                <div>
+                    <strong>minlength</strong>
+                    <p>Définit une longueur minimale.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="css">
+
+            <h2>III. Le CSS</h2>
+
+            <img src="Image/image 2.jpg"
+                alt="Exemple de code CSS"
+                title="Exemple de code CSS">
+
+            <p>
+                CSS signifie <strong>Cascading Style Sheets</strong>.
+                Il permet de modifier l'apparence d'une page HTML.
+            </p>
+
+
+            <h3>1. Les sélecteurs</h3>
+
+            <pre><code>p {
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+}</code></pre>
+
+
+            <h3>2. Les classes</h3>
+
+            <pre><code>.texte {
+    color: blue;
+}</code></pre>
+
+
+            <h3>3. Les identifiants</h3>
+
+            <pre><code>#p2 {
+    color: black;
+}</code></pre>
+
+
+            <h3>4. Les couleurs</h3>
+
+            <pre><code>p {
+    color: blue;
+    background-color: white;
+}</code></pre>
+
+
+            <h3>5. La taille et la police</h3>
+
+            <pre><code>h1 {
+    font-size: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}</code></pre>
+
+
+            <h3>6. Les bordures</h3>
+
+            <pre><code>main {
+    border: 3px solid black;
+}</code></pre>
+
+
+            <h3>7. Margin et Padding</h3>
+
+            <pre><code>section {
+    margin: 20px;
+    padding: 20px;
+}</code></pre>
+
+        </section>
+
+
+        <section id="css-avance">
+
+            <h2>IV. CSS avancé</h2>
+
+            <p>
+                CSS possède plusieurs fonctionnalités permettant
+                de créer des interfaces modernes et organisées.
+            </p>
+
+
+            <h3>1. Flexbox</h3>
+
+            <p>
+                Flexbox permet d'aligner et d'organiser facilement
+                plusieurs éléments sur une ligne ou une colonne.
+            </p>
+
+            <pre><code>.conteneur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}</code></pre>
+
+            <div class="demo-flex">
+
+                <div>Élément 1</div>
+                <div>Élément 2</div>
+                <div>Élément 3</div>
+
+            </div>
+
+
+            <h3>2. CSS Grid</h3>
+
+            <p>
+                Grid permet de créer des mises en page sous forme
+                de lignes et de colonnes.
+            </p>
+
+            <pre><code>.grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}</code></pre>
+
+            <div class="demo-grid">
+
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+
+            </div>
+
+
+            <h3>3. Responsive Design</h3>
+
+            <p>
+                Le responsive permet à une page de s'adapter
+                aux différentes tailles d'écran.
+            </p>
+
+            <p>
+                Une page peut être adaptée aux ordinateurs,
+                tablettes et téléphones.
+            </p>
+
+            <pre><code>@media (max-width: 600px) {
+
+    .conteneur {
+        flex-direction: column;
+    }
+
+}</code></pre>
+
+
+            <h3>4. Les unités CSS</h3>
+
+            <div class="proprietes">
+
+                <div>
+                    <strong>px</strong>
+                    <p>Unité fixe.</p>
+                </div>
+
+                <div>
+                    <strong>%</strong>
+                    <p>Pourcentage de l'élément parent.</p>
+                </div>
+
+                <div>
+                    <strong>vw</strong>
+                    <p>Pourcentage de la largeur de l'écran.</p>
+                </div>
+
+                <div>
+                    <strong>vh</strong>
+                    <p>Pourcentage de la hauteur de l'écran.</p>
+                </div>
+
+            </div>
+
+
+            <h3>5. Les animations</h3>
+
+            <p>
+                Les animations CSS permettent de modifier
+                progressivement l'apparence ou la position d'un élément.
+            </p>
+
+            <pre><code>@keyframes mouvement {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+
+}
+
+.element {
+    animation: mouvement 2s infinite;
+}</code></pre>
+
+            <div class="demo-animation">
+                Animation CSS
+            </div>
+
+
+            <h3>6. Transform</h3>
+
+            <p>
+                La propriété transform permet de déplacer,
+                agrandir, réduire ou faire pivoter un élément.
+            </p>
+
+            <pre><code>.element:hover {
+    transform: scale(1.1);
+}</code></pre>
+
+
+            <h3>7. Positionnement</h3>
+
+            <p>
+                CSS permet également de contrôler la position
+                des éléments avec la propriété position.
+            </p>
+
+            <pre><code>.element {
+    position: relative;
+}
+
+.element2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}</code></pre>
+
+
+            <h3>8. Pseudo-classes</h3>
+
+            <p>
+                Les pseudo-classes permettent d'appliquer un style
+                selon l'état d'un élément.
+            </p>
+
+            <pre><code>a:hover {
+    color: red;
+}
+
+input:focus {
+    border: 2px solid blue;
+}</code></pre>
+
+
+            <h3>9. Variables CSS</h3>
+
+            <p>
+                Les variables permettent de stocker des valeurs
+                que l'on peut réutiliser dans plusieurs endroits.
+            </p>
+
+            <pre><code>:root {
+    --couleur-principale: darkblue;
+}
+
+h1 {
+    color: var(--couleur-principale);
+}</code></pre>
+
+
+            <div class="important">
+
+                <h3>À retenir</h3>
+
+                <p>
+                    <strong>Flexbox</strong> permet principalement
+                    d'organiser les éléments sur un axe.
+                </p>
+
+                <p>
+                    <strong>Grid</strong> permet de créer des
+                    mises en page avec lignes et colonnes.
+                </p>
+
+                <p>
+                    <strong>Responsive</strong> permet d'adapter
+                    le site aux différentes tailles d'écran.
+                </p>
+
+                <p>
+                    <strong>Animation</strong> permet de créer
+                    des mouvements avec CSS.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="exercices">
+
+            <h2>V. Exercices</h2>
+
+            <div class="exercice">
+
+                <h3>Exercice 1 : HTML</h3>
+
+                <p>
+                    Crée une page contenant :
+                </p>
+
+                <ul>
+                    <li>un titre principal ;</li>
+                    <li>un paragraphe ;</li>
+                    <li>une image ;</li>
+                    <li>un lien ;</li>
+                    <li>un formulaire.</li>
+                </ul>
+
+            </div>
+
+
+            <div class="exercice">
+
+                <h3>Exercice 2 : Flexbox</h3>
+
+                <p>
+                    Crée trois blocs et aligne-les horizontalement
+                    avec Flexbox.
+                </p>
+
+            </div>
+
+
+            <div class="exercice">
+
+                <h3>Exercice 3 : Grid</h3>
+
+                <p>
+                    Crée une grille de six éléments avec trois colonnes.
+                </p>
+
+            </div>
+
+
+            <div class="exercice">
+
+                <h3>Exercice 4 : Responsive</h3>
+
+                <p>
+                    Fais en sorte que les trois colonnes deviennent
+                    une seule colonne sur téléphone.
+                </p>
+
+            </div>
+
+
+            <div class="exercice">
+
+                <h3>Exercice 5 : Animation</h3>
+
+                <p>
+                    Crée une animation qui déplace un élément
+                    de gauche à droite.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>Pour aller plus loin :</p>
+
+        <a class="footer-link"
+            href="https://openclassrooms.com/fr/"
+            target="_blank">
+            Découvrir OpenClassrooms
+        </a>
+
+        <p>
+            &copy; 2026 Groupe 1 - Tous droits réservés
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
