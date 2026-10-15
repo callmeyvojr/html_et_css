@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore les fonctionnalités CSS avancées : Flexbox, Grid, responsive design, animations et variables.">
+    <title>CSS avancé - Cours HTML & CSS</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+    <header>
+        <div class="entete">
+            <a class="identite" href="index.html">
+                <span class="identite-marque" aria-hidden="true">&lt;/&gt;</span>
+                <span><strong>Cours HTML &amp; CSS</strong><span class="identite-sous-titre">Le web, pas à pas</span></span>
+            </a>
+            <nav aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="html.html">HTML</a>
+                <a href="html-avance.html">HTML avancé</a>
+                <a href="css.html">CSS</a>
+                <a href="css-avance.html" aria-current="page">CSS avancé</a>
+                <a href="exercices.html">Exercices</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenu">
+        <section class="introduction">
+            <span class="badge">Module 04 · Mise en page et interactions</span>
+            <h1>IV. CSS avancé</h1>
+            <p>Découvre des outils pour créer des mises en page modernes, adaptées à tous les écrans et agréables à utiliser.</p>
+            <div class="actions">
+                <a class="bouton" href="exercices.html">Mettre en pratique</a>
+                <a class="bouton bouton-secondaire" href="css.html">Revoir les bases CSS</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Flexbox</h2>
+            <p>Flexbox organise les éléments le long d’un axe. Elle est pratique pour aligner des éléments en ligne ou en colonne.</p>
+            <pre><code>.conteneur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}</code></pre>
+            <div class="demo-flex" aria-label="Démonstration Flexbox">
+                <div>Élément 1</div><div>Élément 2</div><div>Élément 3</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>CSS Grid</h2>
+            <p>Grid crée une mise en page en deux dimensions, composée de lignes et de colonnes.</p>
+            <pre><code>.grille {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}</code></pre>
+            <div class="demo-grid" aria-label="Démonstration CSS Grid">
+                <div>1</div><div>2</div><div>3</div>
+                <div>4</div><div>5</div><div>6</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Responsive design et unités</h2>
+            <p>Une mise en page responsive s’adapte aux écrans de téléphone, de tablette et d’ordinateur. Les requêtes média permettent d’ajuster les styles en fonction de la largeur disponible.</p>
+            <pre><code>.grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .grille {
+        grid-template-columns: 1fr;
+    }
+}</code></pre>
+            <div class="proprietes">
+                <div><strong><code>px</code></strong><p>Unité fixe, pratique pour les détails.</p></div>
+                <div><strong><code>%</code></strong><p>Proportion de la taille de l’élément parent.</p></div>
+                <div><strong><code>vw</code></strong><p>1 % de la largeur de la fenêtre d’affichage.</p></div>
+                <div><strong><code>rem</code></strong><p>Unité relative à la taille de texte racine.</p></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Animations et transformations</h2>
+            <p>Les transformations modifient l’apparence d’un élément. Les animations font évoluer progressivement ses styles.</p>
+            <pre><code>.carte:hover {
+    transform: translateY(-4px);
+}
+
+@keyframes apparition {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.element {
+    animation: apparition 500ms ease-out;
+}</code></pre>
+            <div class="demo-animation">Animation CSS</div>
+            <div class="important">
+                <strong>Accessibilité :</strong>
+                <p>Prévois une version sans animation pour les personnes qui activent l’option de réduction des mouvements dans leur système.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Positionnement, pseudo-classes et variables</h2>
+            <p>Les pseudo-classes appliquent un style à un élément selon son état. Les variables CSS permettent de réutiliser facilement des valeurs.</p>
+            <pre><code>:root {
+    --couleur-principale: #2448c7;
+}
+
+a:hover {
+    color: var(--couleur-principale);
+}
+
+input:focus-visible {
+    outline: 3px solid var(--couleur-principale);
+}
+
+.parent {
+    position: relative;
+}
+
+.enfant {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}</code></pre>
+        </section>
+
+        <section class="navigation-lecon">
+            <a class="lien-retour" href="css.html">← Les bases du CSS</a>
+            <a class="bouton" href="exercices.html">Leçon suivante : exercices →</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Un projet pédagogique du Groupe 1 · IISAN Abidjan</p>
+        <a class="footer-link" href="https://openclassrooms.com/fr/" target="_blank" rel="noopener noreferrer">Découvrir OpenClassrooms</a>
+    </footer>
+</body>
+
+</html>

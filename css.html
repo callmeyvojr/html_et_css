@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apprends les bases de CSS : sélecteurs, couleurs, typographie, bordures et espacements.">
+    <title>Les bases du CSS - Cours HTML & CSS</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+    <header>
+        <div class="entete">
+            <a class="identite" href="index.html">
+                <span class="identite-marque" aria-hidden="true">&lt;/&gt;</span>
+                <span><strong>Cours HTML &amp; CSS</strong><span class="identite-sous-titre">Le web, pas à pas</span></span>
+            </a>
+            <nav aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="html.html">HTML</a>
+                <a href="html-avance.html">HTML avancé</a>
+                <a href="css.html" aria-current="page">CSS</a>
+                <a href="css-avance.html">CSS avancé</a>
+                <a href="exercices.html">Exercices</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenu">
+        <section class="introduction">
+            <span class="badge">Module 03 · Donner du style</span>
+            <h1>III. Découvrir le CSS</h1>
+            <p>CSS signifie <strong>Cascading Style Sheets</strong>. Il complète le HTML en définissant l’apparence, la couleur et la mise en page des éléments.</p>
+            <div class="actions">
+                <a class="bouton" href="css-avance.html">Continuer : CSS avancé</a>
+                <a class="bouton bouton-secondaire" href="html-avance.html">Revoir HTML avancé</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Relier une feuille de style</h2>
+            <p>La méthode recommandée consiste à placer le fichier CSS à côté du fichier HTML et à le relier dans l’élément <code>&lt;head&gt;</code>.</p>
+            <pre><code>&lt;link rel="stylesheet" href="Style.css"&gt;</code></pre>
+            <p>Dans les exemples qui suivent, chaque règle comprend un sélecteur puis une ou plusieurs déclarations.</p>
+        </section>
+
+        <section>
+            <h2>Les sélecteurs</h2>
+            <p>Un sélecteur cible les éléments HTML auxquels appliquer un style.</p>
+            <pre><code>p {
+    color: #2448c7;
+}
+
+h1 {
+    text-align: center;
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Les classes et les identifiants</h2>
+            <p>Une classe peut être utilisée sur plusieurs éléments. Un identifiant sert à identifier un élément unique dans la page.</p>
+            <pre><code>/* HTML : &lt;p class="texte"&gt;...&lt;/p&gt; */
+.texte {
+    color: #2448c7;
+}
+
+/* HTML : &lt;h2 id="titre-principal"&gt;...&lt;/h2&gt; */
+#titre-principal {
+    color: #172f86;
+}</code></pre>
+            <div class="important">
+                <strong>À retenir :</strong>
+                <p>En CSS, une classe commence par un point (<code>.</code>) et un identifiant par un dièse (<code>#</code>).</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Couleurs et arrière-plans</h2>
+            <p>Les couleurs peuvent être indiquées avec un nom, une valeur hexadécimale ou un autre format reconnu par CSS.</p>
+            <pre><code>body {
+    color: #18243a;
+    background-color: #f3f6fb;
+}
+
+.carte {
+    background-color: white;
+    border-color: #dce3ef;
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Typographie, bordures et espacements</h2>
+            <p>La typographie améliore la lisibilité. Les bordures et les espacements aident à délimiter et organiser le contenu.</p>
+            <pre><code>h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+}
+
+.carte {
+    border: 1px solid #dce3ef;
+    margin: 1rem;
+    padding: 1.5rem;
+}</code></pre>
+            <ul>
+                <li><strong><code>margin</code></strong> : espace à l’extérieur de l’élément.</li>
+                <li><strong><code>padding</code></strong> : espace entre le contenu et la bordure.</li>
+                <li><strong><code>border</code></strong> : bordure autour de l’élément.</li>
+            </ul>
+        </section>
+
+        <section class="navigation-lecon">
+            <a class="lien-retour" href="html-avance.html">← HTML avancé</a>
+            <a class="bouton" href="css-avance.html">Leçon suivante : CSS avancé →</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Un projet pédagogique du Groupe 1 · IISAN Abidjan</p>
+        <a class="footer-link" href="https://openclassrooms.com/fr/" target="_blank" rel="noopener noreferrer">Découvrir OpenClassrooms</a>
+    </footer>
+</body>
+
+</html>

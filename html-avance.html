@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Approfondis HTML avec les balises sémantiques, les formulaires, les tableaux et les médias.">
+    <title>HTML avancé - Cours HTML & CSS</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+    <header>
+        <div class="entete">
+            <a class="identite" href="index.html">
+                <span class="identite-marque" aria-hidden="true">&lt;/&gt;</span>
+                <span><strong>Cours HTML &amp; CSS</strong><span class="identite-sous-titre">Le web, pas à pas</span></span>
+            </a>
+            <nav aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="html.html">HTML</a>
+                <a href="html-avance.html" aria-current="page">HTML avancé</a>
+                <a href="css.html">CSS</a>
+                <a href="css-avance.html">CSS avancé</a>
+                <a href="exercices.html">Exercices</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenu">
+        <section class="introduction">
+            <span class="badge">Module 02 · Structurer le contenu</span>
+            <h1>II. HTML avancé</h1>
+            <p>Utilise les balises adaptées pour organiser les pages, recueillir des informations et intégrer des médias de façon accessible.</p>
+            <div class="actions">
+                <a class="bouton" href="css.html">Continuer : apprendre CSS</a>
+                <a class="bouton bouton-secondaire" href="html.html">Revoir les bases HTML</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Les balises sémantiques</h2>
+            <p>Une balise sémantique décrit le rôle du contenu qu’elle contient. Elle rend la page plus claire pour les navigateurs, les moteurs de recherche et les technologies d’assistance.</p>
+            <pre><code>&lt;header&gt;En-tête du site&lt;/header&gt;
+&lt;nav aria-label="Navigation principale"&gt;Liens du menu&lt;/nav&gt;
+&lt;main&gt;
+    &lt;section&gt;
+        &lt;h1&gt;Titre de la page&lt;/h1&gt;
+        &lt;article&gt;Contenu autonome&lt;/article&gt;
+    &lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;Informations de pied de page&lt;/footer&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Les formulaires</h2>
+            <p>Les formulaires permettent aux visiteurs de saisir des informations. Chaque champ doit avoir une étiquette associée et un nom pour pouvoir être identifié.</p>
+            <pre><code>&lt;form action="#" method="post"&gt;
+    &lt;label for="nom"&gt;Nom :&lt;/label&gt;
+    &lt;input id="nom" name="nom" type="text"
+           autocomplete="name" required&gt;
+
+    &lt;label for="email"&gt;Adresse e-mail :&lt;/label&gt;
+    &lt;input id="email" name="email" type="email"
+           autocomplete="email" required&gt;
+
+    &lt;button type="submit"&gt;Envoyer&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            <div class="proprietes">
+                <div><strong><code>required</code></strong><p>Rend la saisie obligatoire.</p></div>
+                <div><strong><code>placeholder</code></strong><p>Donne un exemple de saisie, sans remplacer l’étiquette.</p></div>
+                <div><strong><code>autocomplete</code></strong><p>Aide le navigateur à remplir les champs.</p></div>
+                <div><strong><code>minlength</code></strong><p>Définit le nombre minimal de caractères.</p></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Les tableaux</h2>
+            <p>Réserve les tableaux aux données tabulaires. Utilise un titre et des en-têtes pour que les colonnes soient compréhensibles.</p>
+            <pre><code>&lt;table&gt;
+    &lt;caption&gt;Liste des apprenants&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope="col"&gt;Nom&lt;/th&gt;
+            &lt;th scope="col"&gt;Âge&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Yves&lt;/td&gt;
+            &lt;td&gt;17&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Audio et vidéo</h2>
+            <p>Les éléments <code>&lt;audio&gt;</code> et <code>&lt;video&gt;</code> permettent d’intégrer des médias avec des commandes de lecture natives.</p>
+            <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Votre navigateur ne peut pas lire ce fichier audio.
+&lt;/audio&gt;
+
+&lt;video controls width="500" poster="apercu.jpg"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Votre navigateur ne peut pas lire cette vidéo.
+&lt;/video&gt;</code></pre>
+            <div class="important">
+                <strong>Bon réflexe :</strong>
+                <p>Ajoute des sous-titres à tes vidéos et fournis une alternative textuelle lorsque le contenu audio porte une information importante.</p>
+            </div>
+        </section>
+
+        <section class="navigation-lecon">
+            <a class="lien-retour" href="html.html">← Les bases du HTML</a>
+            <a class="bouton" href="css.html">Leçon suivante : CSS →</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Un projet pédagogique du Groupe 1 · IISAN Abidjan</p>
+        <a class="footer-link" href="https://openclassrooms.com/fr/" target="_blank" rel="noopener noreferrer">Découvrir OpenClassrooms</a>
+    </footer>
+</body>
+
+</html>

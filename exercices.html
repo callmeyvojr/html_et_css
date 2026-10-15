@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entraîne-toi avec des exercices HTML et CSS, puis réalise un mini-projet de site vitrine.">
+    <title>Exercices et mini-projet - Cours HTML & CSS</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+    <header>
+        <div class="entete">
+            <a class="identite" href="index.html">
+                <span class="identite-marque" aria-hidden="true">&lt;/&gt;</span>
+                <span><strong>Cours HTML &amp; CSS</strong><span class="identite-sous-titre">Le web, pas à pas</span></span>
+            </a>
+            <nav aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="html.html">HTML</a>
+                <a href="html-avance.html">HTML avancé</a>
+                <a href="css.html">CSS</a>
+                <a href="css-avance.html">CSS avancé</a>
+                <a href="exercices.html" aria-current="page">Exercices</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenu">
+        <section class="introduction">
+            <span class="badge">Module 05 · À toi de jouer</span>
+            <h1>V. Exercices et mini-projet</h1>
+            <p>Le meilleur moyen d’apprendre est de pratiquer. Essaie les défis dans l’ordre, puis réutilise les notions pour créer ton propre site.</p>
+            <div class="actions">
+                <a class="bouton" href="#mini-projet">Découvrir le mini-projet</a>
+                <a class="bouton bouton-secondaire" href="index.html">Retour à l’accueil</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Les défis</h2>
+            <div class="exercice">
+                <span class="badge">Défi 01 · HTML</span>
+                <h3>Construis une page personnelle</h3>
+                <p>Crée une page contenant un titre principal, un paragraphe, une image avec son texte alternatif, un lien et un petit formulaire avec des étiquettes.</p>
+            </div>
+            <div class="exercice">
+                <span class="badge">Défi 02 · Flexbox</span>
+                <h3>Aligne des cartes</h3>
+                <p>Crée trois blocs et aligne-les avec Flexbox. Ajoute un espace régulier entre eux et fais-les passer sur plusieurs lignes si nécessaire.</p>
+            </div>
+            <div class="exercice">
+                <span class="badge">Défi 03 · Grid</span>
+                <h3>Organise une grille</h3>
+                <p>Crée six éléments dans une grille de trois colonnes sur grand écran.</p>
+            </div>
+            <div class="exercice">
+                <span class="badge">Défi 04 · Responsive</span>
+                <h3>Adapte la page au téléphone</h3>
+                <p>À l’aide d’une requête média, transforme la grille de trois colonnes en une seule colonne sur petit écran.</p>
+            </div>
+            <div class="exercice">
+                <span class="badge">Défi 05 · CSS</span>
+                <h3>Anime un élément</h3>
+                <p>Crée une animation simple qui fait apparaître un élément ou le déplace doucement. Pense à respecter la préférence de réduction des mouvements.</p>
+            </div>
+        </section>
+
+        <section id="mini-projet">
+            <div class="exercice exercice-final">
+                <span class="badge">Projet final · Groupe 1</span>
+                <h2>Crée ton propre site vitrine</h2>
+                <p>Présente un sujet qui te passionne : une association, un métier, une activité ou un lieu de ton quartier.</p>
+                <h3>Le site doit contenir</h3>
+                <ul>
+                    <li>Un accueil qui présente clairement le sujet ;</li>
+                    <li>Une navigation et des sections bien organisées ;</li>
+                    <li>Des titres, du texte, une image avec un texte alternatif et un lien utile ;</li>
+                    <li>Une mise en page avec Flexbox ou Grid ;</li>
+                    <li>Un affichage agréable sur téléphone et ordinateur.</li>
+                </ul>
+                <h3>Avant de présenter ton projet</h3>
+                <ul>
+                    <li>Vérifie que chaque lien mène à la bonne page ;</li>
+                    <li>Relis les textes et vérifie les chemins des images ;</li>
+                    <li>Teste le site avec une fenêtre étroite ;</li>
+                    <li>Demande à un camarade de parcourir le site.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="navigation-lecon">
+            <a class="lien-retour" href="css-avance.html">← CSS avancé</a>
+            <a class="bouton" href="index.html">Retour à l’accueil →</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Un projet pédagogique du Groupe 1 · IISAN Abidjan</p>
+        <a class="footer-link" href="https://openclassrooms.com/fr/" target="_blank" rel="noopener noreferrer">Découvrir OpenClassrooms</a>
+    </footer>
+</body>
+
+</html>

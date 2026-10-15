@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvre les bases du HTML : structure d'une page, balises, attributs et contenu.">
+    <title>Les bases du HTML - Cours HTML & CSS</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+    <header>
+        <div class="entete">
+            <a class="identite" href="index.html">
+                <span class="identite-marque" aria-hidden="true">&lt;/&gt;</span>
+                <span>
+                    <strong>Cours HTML &amp; CSS</strong>
+                    <span class="identite-sous-titre">Le web, pas à pas</span>
+                </span>
+            </a>
+            <nav aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="html.html" aria-current="page">HTML</a>
+                <a href="html-avance.html">HTML avancé</a>
+                <a href="css.html">CSS</a>
+                <a href="css-avance.html">CSS avancé</a>
+                <a href="exercices.html">Exercices</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenu">
+        <section class="introduction">
+            <span class="badge">Module 01 · Les fondamentaux</span>
+            <h1>I. Découvrir le HTML</h1>
+            <p>HTML donne une structure et un sens au contenu d’une page web. Dans cette première leçon, tu vas découvrir comment construire ton premier document.</p>
+            <div class="actions">
+                <a class="bouton" href="html-avance.html">Continuer : HTML avancé</a>
+                <a class="bouton bouton-secondaire" href="index.html">Retour à l’accueil</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>La structure d’un document HTML</h2>
+            <p>Un document HTML contient des éléments qui indiquent au navigateur comment organiser le contenu.</p>
+            <ul>
+                <li><strong><code>&lt;html&gt;</code></strong> : contient toute la page.</li>
+                <li><strong><code>&lt;head&gt;</code></strong> : contient les informations destinées au navigateur.</li>
+                <li><strong><code>&lt;body&gt;</code></strong> : contient les éléments visibles de la page.</li>
+            </ul>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Ma première page&lt;/title&gt;
+    &lt;link rel="stylesheet" href="Style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bonjour&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <div class="important">
+                <strong>À retenir :</strong>
+                <p><code>&lt;head&gt;</code> contient les métadonnées ; <code>&lt;body&gt;</code> contient le contenu affiché.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Les balises les plus courantes</h2>
+            <p>Les balises délimitent les éléments et décrivent leur rôle.</p>
+            <div class="proprietes">
+                <div><strong><code>&lt;h1&gt; à &lt;h6&gt;</code></strong><p>Les titres, du plus important au moins important.</p></div>
+                <div><strong><code>&lt;p&gt;</code></strong><p>Un paragraphe de texte.</p></div>
+                <div><strong><code>&lt;a&gt;</code></strong><p>Un lien vers une autre page ou un autre endroit.</p></div>
+                <div><strong><code>&lt;img&gt;</code></strong><p>Une image, avec une description dans <code>alt</code>.</p></div>
+                <div><strong><code>&lt;ul&gt;</code> et <code>&lt;ol&gt;</code></strong><p>Des listes non ordonnées ou numérotées.</p></div>
+                <div><strong><code>&lt;li&gt;</code></strong><p>Un élément de liste.</p></div>
+                <div><strong><code>&lt;strong&gt;</code></strong><p>Un contenu important.</p></div>
+                <div><strong><code>&lt;div&gt;</code></strong><p>Un conteneur générique pour regrouper du contenu.</p></div>
+            </div>
+            <pre><code>&lt;h2&gt;Mon titre&lt;/h2&gt;
+&lt;p&gt;Voici un paragraphe.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;Visiter le site&lt;/a&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Les attributs</h2>
+            <p>Les attributs ajoutent des informations à une balise. Ils s’écrivent dans la balise ouvrante, sous la forme <code>nom="valeur"</code>.</p>
+            <ul>
+                <li><strong><code>id</code></strong> : identifiant unique d’un élément.</li>
+                <li><strong><code>class</code></strong> : classe utilisable pour appliquer des styles à plusieurs éléments.</li>
+                <li><strong><code>href</code></strong> : destination d’un lien.</li>
+                <li><strong><code>src</code></strong> : chemin vers une image ou une ressource.</li>
+                <li><strong><code>alt</code></strong> : description textuelle d’une image.</li>
+            </ul>
+            <pre><code>&lt;p class="introduction" id="bienvenue"&gt;
+    Bonjour et bienvenue !
+&lt;/p&gt;</code></pre>
+        </section>
+
+        <section class="navigation-lecon">
+            <a class="lien-retour" href="index.html">← Accueil du projet</a>
+            <a class="bouton" href="html-avance.html">Leçon suivante : HTML avancé →</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Un projet pédagogique du Groupe 1 · IISAN Abidjan</p>
+        <a class="footer-link" href="https://openclassrooms.com/fr/" target="_blank" rel="noopener noreferrer">Découvrir OpenClassrooms</a>
+    </footer>
+</body>
+
+</html>
